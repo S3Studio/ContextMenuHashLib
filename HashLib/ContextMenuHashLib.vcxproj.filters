@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{e9139c41-3ca8-4667-9178-adf4ff7f322b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\zlib">
+      <UniqueIdentifier>{2d77476b-868e-4b67-a8cf-dc92f02af8e2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BtihHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ed2kHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HashLibFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OSMd4Hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OSMd5Hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WhirlpoolHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinCryptHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZlibAdler32Hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZlibCrc32Hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\Whirlpool.c">
+      <Filter>ThirdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\zlib\adler32.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\zlib\crc32.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\zlib\zutil.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BtihHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ed2kHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HashLibFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IHashLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OSMd4Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OSMd5Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WhirlpoolHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinCryptHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZlibAdler32Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZlibCrc32Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Whirlpool-nessie.h">
+      <Filter>ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\zlib\crc32.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\zlib\zconf.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\zlib\zlib.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\zlib\zutil.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

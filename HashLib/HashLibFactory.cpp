@@ -8,6 +8,8 @@
 #include "ZLibCrc32Hash.h"
 #include "ZlibAdler32Hash.h"
 #include "WhirlpoolHash.h"
+#include "SsdeepHash.h"
+#include "KeccakHash.h"
 
 CHashLibFactory::CHashLibFactory(void)
 {
@@ -54,6 +56,21 @@ IHashLib* CHashLibFactory::CreateHashLib( em_HASH_LIB_TYPE emType )
 		break;
 	case emHLT_WHIRLPOOL:
 		pRet = new(std::nothrow) CWhirlpoolHash;
+		break;
+	case emHLT_SSDEEP:
+		pRet = new(std::nothrow) CSsdeepHash();
+		break;
+	case emHLT_KECCAK224:
+		pRet = new(std::nothrow) CKeccakHash(_T("Keccak224"), 224);
+		break;
+	case emHLT_KECCAK256:
+		pRet = new(std::nothrow) CKeccakHash(_T("Keccak256"), 256);
+		break;
+	case emHLT_KECCAK384:
+		pRet = new(std::nothrow) CKeccakHash(_T("Keccak384"), 384);
+		break;
+	case emHLT_KECCAK512:
+		pRet = new(std::nothrow) CKeccakHash(_T("Keccak512"), 512);
 		break;
 	}
 

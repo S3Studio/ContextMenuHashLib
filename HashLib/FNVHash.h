@@ -1,11 +1,15 @@
 #pragma once
 #include "IHashLib.h"
 
+#define DEFAULT_BASIS_32BIT 2166136261
+#define DEFAULT_PRIME_32BIT 16777619
+
 class CFNVHash :
 	public IHashLib
 {
 public:
-	CFNVHash(UINT32 nBasis, UINT32 nPrime);
+	CFNVHash(UINT32 nBasis = DEFAULT_BASIS_32BIT, UINT32 nPrime = DEFAULT_PRIME_32BIT);
+	CFNVHash(CFNVHash& CopyFrom);
 	virtual ~CFNVHash(void);
 
 	struct InitParam

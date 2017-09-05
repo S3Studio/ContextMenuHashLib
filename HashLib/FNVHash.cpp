@@ -11,6 +11,15 @@ CFNVHash::CFNVHash(UINT32 nBasis, UINT32 nPrime)
 	m_InitParam.bAlg1a = TRUE;
 }
 
+CFNVHash::CFNVHash(CFNVHash& CopyFrom)
+: m_nHash(CopyFrom.m_nHash)
+, m_nBasis(CopyFrom.m_nBasis)
+, m_nPrime(CopyFrom.m_nPrime)
+, m_InitParam(CopyFrom.m_InitParam)
+{
+}
+
+
 CFNVHash::~CFNVHash(void)
 {
 }

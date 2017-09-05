@@ -42,6 +42,10 @@ Use code from zlib (version 1.2.5)
 
 Use code from [official site](http://www.larc.usp.br/~pbarreto/WhirlpoolPage.html)
 
-* Others
+* ssdeep
 
-Implement of FNV hash method is also provided but not included in the project, which is original code.
+Use original code.
+
+* Keccak(SHA-3) Serial
+
+Use code from [official site](http://keccak.noekeon.org/files.html)

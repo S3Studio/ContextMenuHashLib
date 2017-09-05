@@ -14,10 +14,13 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="ThirdParty">
-      <UniqueIdentifier>{e9139c41-3ca8-4667-9178-adf4ff7f322b}</UniqueIdentifier>
+      <UniqueIdentifier>{61c1b9f1-43b4-4350-9dab-3ecb1f90dbc8}</UniqueIdentifier>
     </Filter>
     <Filter Include="ThirdParty\zlib">
-      <UniqueIdentifier>{2d77476b-868e-4b67-a8cf-dc92f02af8e2}</UniqueIdentifier>
+      <UniqueIdentifier>{eb6f7598-fe8d-4ef1-a249-eb47f4a26784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\Keccak">
+      <UniqueIdentifier>{d73c5ca2-b01e-4560-9dab-c162ec974aec}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,13 +30,22 @@
     <ClCompile Include="Ed2kHash.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FNVHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="HashLibFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeccakHash.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="OSMd4Hash.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="OSMd5Hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SsdeepHash.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
@@ -63,6 +75,21 @@
     <ClCompile Include="ThirdParty\zlib\zutil.c">
       <Filter>ThirdParty\zlib</Filter>
     </ClCompile>
+    <ClCompile Include="ThirdParty\Keccak\KeccakDuplex.c">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\Keccak\KeccakF-1600-opt32.c">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\Keccak\KeccakF-1600-opt64.c">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\Keccak\KeccakNISTInterface.c">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdParty\Keccak\KeccakSponge.c">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BtihHash.h">
@@ -71,16 +98,25 @@
     <ClInclude Include="Ed2kHash.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FNVHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="HashLibFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IHashLib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="KeccakHash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="OSMd4Hash.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="OSMd5Hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SsdeepHash.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
@@ -113,8 +149,46 @@
     <ClInclude Include="ThirdParty\zlib\zutil.h">
       <Filter>ThirdParty\zlib</Filter>
     </ClInclude>
+    <ClInclude Include="ThirdParty\Keccak\brg_endian.h">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Keccak\KeccakDuplex.h">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Keccak\KeccakF-1600-int-set.h">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Keccak\KeccakF-1600-interface.h">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Keccak\KeccakF-1600-opt32-settings.h">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Keccak\KeccakF-1600-opt64-settings.h">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Keccak\KeccakNISTInterface.h">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\Keccak\KeccakSponge.h">
+      <Filter>ThirdParty\Keccak</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <None Include="ThirdParty\Keccak\KeccakF-1600-32-rvk.macros">
+      <Filter>ThirdParty\Keccak</Filter>
+    </None>
+    <None Include="ThirdParty\Keccak\KeccakF-1600-32.macros">
+      <Filter>ThirdParty\Keccak</Filter>
+    </None>
+    <None Include="ThirdParty\Keccak\KeccakF-1600-64.macros">
+      <Filter>ThirdParty\Keccak</Filter>
+    </None>
+    <None Include="ThirdParty\Keccak\KeccakF-1600-unrolling.macros">
+      <Filter>ThirdParty\Keccak</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>
